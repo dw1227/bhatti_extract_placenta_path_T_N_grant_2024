@@ -16,7 +16,7 @@ This project involves extracting placental pathology features for study particip
 
 To run the analysis, the following R packages are required:
 
-- `readr`: For reading Excel files (pathology features database)
+- `readxl`: For reading Excel files (pathology features database)
 - `tidyverse`: For data tidying and manipulation
 
 
