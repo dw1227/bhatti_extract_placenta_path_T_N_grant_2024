@@ -49,6 +49,10 @@ ano <- ano %>%
 # Create a contingency table comparing old and new chorioamnionitis statuses
 table(ano$ChronicChorioamnionitis_old, ano$ChronicChorioamnionitis)
 
+
+ano1<-ano %>%
+  filter(!duplicated(Main_Index))
+
 # Save the updated 'ano' data frame to an RData file for further use
 save(ano, file = "results/TDvsPTD_nomising_withMIRFIR_withcca.RData")
 
